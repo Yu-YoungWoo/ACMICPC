@@ -18,11 +18,10 @@ public class N_1193 {
                         // 분모는 대각선의 개수 - (X 번째 - 직전 대각까지의 누적합 - 1)
                         // 분자는 X 번째 - 직전 대각선까지의 누적합
                         System.out.println((cross_count - (x - prev_count_sum - 1)) + "/" + (x - prev_count_sum));
-                        break;
                     } else {
                         System.out.println((x - prev_count_sum) + "/" + (cross_count - (x - prev_count_sum - 1)));
-                        break;
                     }
+                    break;
                 } else {
                     prev_count_sum += cross_count;
                     cross_count++;
